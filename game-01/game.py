@@ -43,13 +43,13 @@ while open_window:
             open_window = False
 
     commands = pygame.key.get_pressed()
-    if commands[pygame.K_UP] and obj_y > 0:
-        obj_y -= speed
-    if commands[pygame.K_DOWN] and obj_y < y - car_height:
-        obj_y += speed
-    if commands[pygame.K_LEFT] and obj_x > 0:
+#    if commands[pygame.K_UP] and obj_y > 0:
+#        obj_y -= speed
+#    if commands[pygame.K_DOWN] and obj_y < y - car_height:
+#        obj_y += speed
+    if commands[pygame.K_LEFT] and obj_x > grass_x + border_width:
         obj_x -= speed
-    if commands[pygame.K_RIGHT] and obj_x < x - car_width:
+    if commands[pygame.K_RIGHT] and obj_x < x - grass_x - border_width - car_width:
         obj_x += speed
 
     # CONCRETE
