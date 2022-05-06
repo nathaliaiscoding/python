@@ -1,0 +1,3 @@
+nome,area,aniversario
+Nathalia Laudano,Back End,Novembro
+Thalita Nunes,Front End,Dezembro
